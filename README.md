@@ -1,6 +1,11 @@
 
 #Netflix GPT
 #Feature 
+
+Header
+Login Form
+Sign up 
+
 -Login/Signup
     -Sign in / Signup form
     -After login redirect to browser
