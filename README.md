@@ -5,6 +5,11 @@
 Header
 Login Form
 Sign up 
+Routings
+Validation forms
+UseRef hooks
+Authentication - 
+Setup reducer.
 
 -Login/Signup
     -Sign in / Signup form
