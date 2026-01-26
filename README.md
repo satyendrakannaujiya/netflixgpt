@@ -25,6 +25,10 @@ update store for tailer video data
 emded the youtube video 
 make it auto play and mute
 Added tailwind clases to make it maine container to look awesome
+Build movie list
+build move card
+found image cdn url
+made ui looks better 
 
 -Login/Signup
     -Sign in / Signup form

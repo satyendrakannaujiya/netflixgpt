@@ -12,3 +12,6 @@ export const API_OPTIONS = {
 
 export const GETNOWPLAYING_API = "https://api.themoviedb.org/3/movie/now_playing?page=1";
 export const GETMOVIEVIDEO_API = (movieId) => `https://api.themoviedb.org/3/movie/${movieId}/videos`;
+export const IMAGE_BASE_URL = `https://image.tmdb.org/t/p/w400/`;
+export const GETPOPULAR_API = "https://api.themoviedb.org/3/movie/popular?page=1";
+export const GETUPCOMING_API = "https://api.themoviedb.org/3/movie/upcoming?page=1";
