@@ -16,13 +16,13 @@ const Header = () => {
     useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
         if(user) {
-            console.log("User is logged in ", user);
+          
             const { uid, email, displayName } = user;
             dispatch(addUser({ uid, email, displayName }));
             navigate("/browse");
         } else {
             dispatch(removeUser());
-            console.log("User is logged out ");
+            
             navigate("/");
         }
     });   
@@ -36,11 +36,11 @@ const Header = () => {
 
   const handleSignOut = () => {
         signOut(auth).then(() => {
-          console.log("User signed out successfully ");
+          
           navigate("/");
       }).catch((error) => {
         navigate("/");
-          console.log("Error signing out ", error);
+         
       });
   }
   return (

@@ -9,12 +9,9 @@ const useVideoBackground = ({movieId}) => {
         const movieData = await fetch(GETMOVIEVIDEO_API(movieId), API_OPTIONS);
         const movieJson = await movieData.json();
         const results = movieJson.results;
-        console.log("Movie Video Results ", results);
         const trailer = results.filter((vid) => {
-            console.log("Video Type ", vid.type, vid.type == "Trailer");
             return vid.type == "Trailer";
         });
-        console.log("Trailer ", trailer);
         const tailerMovie = trailer && trailer.length > 0 ? trailer[0] : results[0];
         dispatch(addTrailerVideo(tailerMovie));
     }

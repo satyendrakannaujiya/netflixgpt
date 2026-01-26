@@ -28,24 +28,24 @@ const Login = () => {
             setErrorMessage("");
             if(isLogin) {
                  signInWithEmailAndPassword(auth, email, password).then((userCredential) => {
-                    console.log(" User logged in ",userCredential);
+                   
                     // navigate("/browse");
                 }).catch((error) => {
                     setErrorMessage(error.message + "- " + error.code);
                 });
             } else{
-                console.log("Signing up user ",email, password);
+               
                 createUserWithEmailAndPassword(auth, email, password).then((userCredential) => {
-                    console.log(" User created ",userCredential);
+                  
                     updateProfile(auth.currentUser, {
                         displayName: name
                     }).then(() => {
-                        console.log("Profile updated successfully ");
+                       
                         const { uid, email, displayName } = auth.currentUser;
                          dispatch(addUser({ uid, email, displayName })); 
                         //  navigate("/browse");  
                     }).catch((error) => {
-                        console.log("Error updating profile ", error);
+                    
                         setErrorMessage(error.message + "- " + error.code);
                     });
                 }).catch((error) => {
