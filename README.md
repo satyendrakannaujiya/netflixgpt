@@ -19,7 +19,7 @@ Get data from TMDB api
 crreate custom hook
 now playing movie
 update store with movie data - creeated movie slice 
-Planning for main container and secondary container.
+Planning for main container and secondary container.gpt search feature 
 Fetch data for trailer video
 update store for tailer video data
 emded the youtube video 
@@ -29,7 +29,8 @@ Build movie list
 build move card
 found image cdn url
 made ui looks better 
-
+gpt search feature \
+Integrate gpt apis
 -Login/Signup
     -Sign in / Signup form
     -After login redirect to browser
